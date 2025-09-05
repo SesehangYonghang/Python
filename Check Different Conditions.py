@@ -1,12 +1,24 @@
-# A Program to check different conditions 
-num = int(input("Enter number: "))
-if num == 0:
-    print("The number is zero.")
-elif num > 0 and num % 2 == 0:
-    print("The number is a positive even number.")
-elif num > 0 and num % 2 != 0:
-    print("The number is a positive odd number.")
-elif num < 0 and num % 2 == 0:
-    print("The number is a negative even number.")
-else:
-    print("The number is a negative odd number.")
+# Match-case statement 
+def main():
+    Daysinaweek()
+def Daysinaweek():
+    choice = input("""Enter your choice: """)
+    match choice:
+        case "1":
+            print("Monday")
+        case "2":
+            print("Tuesday")
+        case "3":
+            print("Wednesday")
+        case "4":
+            print("Thursday")
+        case "5":
+            print("Friday")
+        case "6":
+            print("Saturday")
+        case "7":
+            print("Sunday")
+        case _:
+            print("Invalid Input")             
+
+main()
